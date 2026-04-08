@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Horror Clock Tower</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+    .scene { width: 100%; max-width: 480px; margin: 0 auto; background: #000; padding-bottom: 1.5rem; }
+    canvas { display: block; width: 100%; height: auto; }
+    .dread-time {
+      display: flex; justify-content: center;
+      align-items: center; gap: 10px;
+      margin-top: 0.6rem; flex-wrap: wrap;
+    }
+    .dread-box {
+      background: #0a0000; border: 1px solid #3a0a0a;
+      border-radius: 4px; padding: 6px 14px;
+      text-align: center; min-width: 64px;
+    }
+    .dread-label { font-size: 9px; color: #5a1a1a; letter-spacing: 0.2em; font-family: serif; text-transform: uppercase; }
+    .dread-val   { font-size: 20px; color: #c0180a; font-family: 'Courier New', monospace; font-weight: 700; }
+    .dread-sep   { font-size: 24px; color: #3a0808; font-weight: 700; font-family: monospace; }
+    .dread-date  { text-align: center; margin-top: 0.5rem; font-size: 11px; color: #3a1010; letter-spacing: 0.2em; font-family: serif; text-transform: uppercase; }
+    #watch { display: none; }
+  </style>
+</head>
+<body>
+<div class="scene">
+  <canvas id="tower" width="480" height="680"></canvas>
+  <div class="dread-time">
+    <div class="dread-box"><div class="dread-label">hour</div><div class="dread-val" id="dh">00</div></div>
+    <div class="dread-sep">:</div>
+    <div class="dread-box"><div class="dread-label">min</div><div class="dread-val" id="dm">00</div></div>
+    <div class="dread-sep">:</div>
+    <div class="dread-box"><div class="dread-label">sec</div><div class="dread-val" id="ds">00</div></div>
+  </div>
+  <div class="dread-date" id="ddate">— the witching hour —</div>
+</div>
+
+<!-- Original span preserved for index.js -->
+<span id="watch"></span>
+<script src="index.js"></script>
+
+<!-- Clock Tower Script -->
+<script>
+  /* paste the full <script> block from the widget here */
+</script>
+</body>
+</html>
